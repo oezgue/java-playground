@@ -18,4 +18,6 @@ public class justAclass {
 
     // commit 2 to myBranch 22:55 Uhr
     // commit after rebase 23:28 Uhr
+
+    // commit2 after rebase
 }
