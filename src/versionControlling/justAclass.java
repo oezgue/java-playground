@@ -5,4 +5,6 @@ public class justAclass {
     // commit to main 2 22:14Uhr
 
     // commit 1 to myBranch 22:16Uhr
+
+    // commit 2 to myBranch 22:55 Uhr
 }
