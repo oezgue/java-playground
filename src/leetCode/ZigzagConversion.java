@@ -68,10 +68,22 @@ public class ZigzagConversion {
         }
         //build the string line by line, by alternating between the two lists
 
-        for (int i = 0; i < length; i++) {
-
+        for (int i = 0; i < numRows; i++) {
+            for (int j = 0; j < orthoList.size(); j++) {
+                if (orthoList.get(j) != null) {
+                    if (orthoList.get(j)[i] != 0) {
+                        sb.append(orthoList.get(j)[i]);
+                    }
+                }
+                if (diagonalList.get(j) != null) {
+                    if (diagonalList.get(j)[i] != 0) {
+                        sb.append(diagonalList.get(j)[i]);
+                    }
+                }
+            }
         }
+        s = sb.toString();
 
-        return "hello";
+        return s;
     }
 }
