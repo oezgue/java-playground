@@ -6,13 +6,21 @@ public class MainTest {
 
     public static void main(String[] args) {
 
-        System.out.println("Meldung zur Optimierung am 2023-07-04\n" +
-                "\n" +
-                "Für die folgenden Cashpoints wurde am 2023-07-04 keine Optimierung (OptId = 111) durchgeführt, da unbestätigte Befüllungen existieren: \n" +
-                "\n" +
-                "\tCashpoint mit Gerätenummer: 0170Aktionsnummer: com.dynacash.model.extended.calendar.CpStammdatenKassettenCalExt@75e02a27.\n" +
-                "\n" +
-                "\tCashpoint mit Gerätenummer: 0169Aktionsnummer: com.dynacash.model.extended.calendar.CpStammdatenKassettenCalExt@76c66854.\n" +
-                "\n");
+        System.out.println("hallo");
+        String s = "Hallo ich bin ein String.";
+        char[] charArray = {'a','b','c'};
+
+        char[] value = new char[s.length()];
+        value[2] = 'a';
+        StringBuilder sb = new StringBuilder();
+        s = String.valueOf(charArray);
+        System.out.println(value);
+        sb.append('i');
+        //System.out.println(sb);
+
+        String str = sb.toString();
+        //System.out.println(str);
+        System.out.println(value.toString());
+
     }
 }
