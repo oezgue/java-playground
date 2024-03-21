@@ -40,11 +40,10 @@ The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of 
 public class ZigzagConversion {
     public String conversion(String s, int numRows) {
         StringBuilder sb = new StringBuilder();
-        //Idea: create two Lists, one list holds the orthogonal rows and the other holds the diagonal rows as Array Chars.
-        // Then iterate through both, creating the result string via appending to a Stringbuilder
+        //Idea: create one (!) List with columns
         int length = s.length();
         ArrayList<char[]> orthoList = new ArrayList<>();
-        ArrayList<char[]> diagonalList = new ArrayList<>();
+        //ArrayList<char[]> diagonalList = new ArrayList<>();
         int pointer = 0;
         while (pointer <= length) {
 
@@ -61,23 +60,17 @@ public class ZigzagConversion {
                 if (pointer < length) {
                     char[] diagonalChar = new char[numRows];
                     diagonalChar[numRows - i] = s.charAt(pointer);
-                    diagonalList.add(diagonalChar);
+                    orthoList.add(diagonalChar);
                     pointer++;
                 } else pointer++;
             }
         }
-        //build the string line by line, by alternating between the two lists
-
+        //build the string line by line
         for (int i = 0; i < numRows; i++) {
             for (int j = 0; j < orthoList.size(); j++) {
                 if (orthoList.get(j) != null) {
                     if (orthoList.get(j)[i] != 0) {
                         sb.append(orthoList.get(j)[i]);
-                    }
-                }
-                if (diagonalList.get(j) != null) {
-                    if (diagonalList.get(j)[i] != 0) {
-                        sb.append(diagonalList.get(j)[i]);
                     }
                 }
             }
