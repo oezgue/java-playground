@@ -1,0 +1,10 @@
+package Testquestions.q185.p2;
+//line n1
+import Testquestions.q185.A;
+public class B {
+    public void doStuff(){
+        A b= new A();
+    }
+}
+
+
