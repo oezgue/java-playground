@@ -10,7 +10,7 @@ abstract class Planet{
     abstract void rotate();
 }
 class Earth extends Planet{
-    public void revolve(){ //protected
+    protected void revolve(){ //protected
 
     }
     protected void rotate(){ //make a protected

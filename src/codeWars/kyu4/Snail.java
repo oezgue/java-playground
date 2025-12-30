@@ -16,52 +16,44 @@ public class Snail {
 
     public static int[] snail(int[][] array) {
         List<Integer> route = new ArrayList<>();
-        int snailRouteLength = array.length* array.length;
         int n = array.length;
-        int x = 0;
+        int x = -1;
         int y = 0;
-        route.add(array[y][x]);
-        x++;
+
         while (n > 0) {
-
             //rechts
-            for (int i = 1 ; i < n-1; i++){
-                route.add(array[y][x]);
+            for (int i = 0 ; i < n; i++){
                 x++;
+                route.add(array[y][x]);
             }
-
             //runter
             for (int i = 1; i < n; i++){
-                route.add(array[y][x]);
                 y++;
-            }
-
-
-//            //links
-            for (int i = 1; i < n; i++){
                 route.add(array[y][x]);
+            }
+            //links
+            for (int i = 1; i < n; i++){
                 x--;
+                route.add(array[y][x]);
             }
             n--;
-//            //hoch
+            //hoch
             for (int i = 1; i < n; i++){
-                route.add(array[y][x]);
                 y--;
+                route.add(array[y][x]);
             }
             n--;
 
         }
-
-
         return route.stream().mapToInt(Integer::intValue).toArray();
     }
 
     public static void main(String[] args) {
-        int[][] array = {   {10,2,3,4,50},
-                            {4,51,6,71,8},
-                            {7,8,9,6,4},
-                            {1,11,1,41,4},
-                            {20,3,4,5,60}};
+        int[][] array = {   {10,2,3,40},
+                            {4,51,6,7},
+                            {7,8,9,6},
+                            {10,11,1,40}
+                            };
         System.out.println(Arrays.toString(snail(array)));
     }
 

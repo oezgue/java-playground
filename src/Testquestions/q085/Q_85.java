@@ -11,14 +11,14 @@ package Testquestions.q085;
 	            try {
 	                method1();
 	            }
-	            catch (MyException ne) {
+	            catch (Testquestions.q085.exercise.MyException ne) {
 	                System.out.print("A");
 	            }
 	        }
 
 	        public static void method1() {//throws RuntimeException {// line n1
 	            try {
-	                throw Math.random() > 0.5 ? new MyException() : new RuntimeException();
+	                throw Math.random() > 0.5 ? new Testquestions.q085.exercise.MyException() : new RuntimeException();
 	            }
 	            catch (RuntimeException re) {
 	                System.out.print("B");
