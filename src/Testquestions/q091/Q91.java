@@ -1,5 +1,7 @@
 package Testquestions.q091;
 
+import java.util.ArrayList;
+
 public class Q91 {
 
     /*
@@ -32,20 +34,20 @@ public class Q91 {
      */
     public static void main(String[] args) {
 //A)
-//        ArrayList<Animal> myList=new ArrayList<>();
-//        myList.add(new Tiger());
+        ArrayList<Animal> myList=new ArrayList<>();
+        myList.add(new Tiger());
 //B)
-//     ArrayList<Hunter>   myList2=new ArrayList<>();
-//     myList2.add(new Cat());
+     ArrayList<Hunter>   myList2=new ArrayList<>();
+     myList2.add(new Cat());
 //C)
-//        ArrayList<Hunter>myList3=new ArrayList<>();
-//        myList3.add(new Tiger());
+        ArrayList<Hunter>myList3=new ArrayList<>();
+        myList3.add(new Tiger());
 //D)
 //        ArrayList<Tiger> myList4 = new ArrayList<>();
 //        myList4.add(new Cat());
-////E)
-//        ArrayList<Animal> myList5 = new ArrayList<>();
-//        myList5.add(new Cat());
+//E)
+        ArrayList<Animal> myList5 = new ArrayList<>();
+        myList5.add(new Cat());
         /*
         A.Option A
         B.Option B

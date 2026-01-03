@@ -1,6 +1,13 @@
+import java8inAction.lambdas.MyInterfaceOne;
+import java8inAction.lambdas.MyInterfaceTwo;
+
 public class Main {
+    class Implementor implements MyInterfaceOne, MyInterfaceTwo{
+
+    }
+
     public static void main(String[] args) {
-        int[] array = new int[3]; array[0] = 1;
-        System.out.println(array[1]);
+
+
     }
 }

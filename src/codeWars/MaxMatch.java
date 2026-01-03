@@ -1,8 +1,6 @@
 package codeWars;
 
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Set;
+import java.util.*;
 
 class MaxMatch {
     public static List<String> maxMatch(String sentence){
@@ -28,9 +26,10 @@ class MaxMatch {
     }
 
     public static class Preloaded {
-        public static final Set<String> VALID_WORDS = Set.of(
-                "love", "java", "can", "apple", "pie", "is", "good", "hello", "darling"
-                // ... hier wären die ca. 50 Wörter
+        public static final Set<String> VALID_WORDS = Collections.unmodifiableSet(
+                new HashSet<>(Arrays.asList(
+                        "love", "java", "can", "apple", "pie", "is", "good", "hello", "darling"
+                ))
         );
     }
 }
