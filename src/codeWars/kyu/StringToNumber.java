@@ -1,4 +1,4 @@
-package codeWars;
+package codeWars.kyu;
 
 public class StringToNumber {
     public static int stringToNumber(String str){

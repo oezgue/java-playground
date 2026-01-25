@@ -1,4 +1,4 @@
-package codeWars;
+package codeWars.kyu;
 
 public class HumanReadableTime {
     public static String makeReadable (int seconds){

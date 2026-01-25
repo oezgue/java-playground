@@ -1,4 +1,4 @@
-package codeWars;
+package codeWars.kyu;
 
 public class ReversedStrings {
     public static String solution(String str) {

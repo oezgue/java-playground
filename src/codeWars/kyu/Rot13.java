@@ -1,4 +1,4 @@
-package codeWars;
+package codeWars.kyu;
 
 public class Rot13 {
     public static String rot13(String str) {

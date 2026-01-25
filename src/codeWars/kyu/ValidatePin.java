@@ -1,4 +1,4 @@
-package codeWars;
+package codeWars.kyu;
 
 public class ValidatePin {
     public static boolean validatePin (String str){

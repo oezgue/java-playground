@@ -1,4 +1,4 @@
-package codeWars;
+package codeWars.kyu;
 
 public class EndsWith {
     public static boolean solution(String str, String ending) {

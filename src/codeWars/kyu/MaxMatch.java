@@ -1,4 +1,4 @@
-package codeWars;
+package codeWars.kyu;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package codeWars;
+package codeWars.kyu;
 
 public class IsSquare {
     public static boolean isSquare(int n){

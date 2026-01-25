@@ -1,4 +1,4 @@
-package codeWars;
+package codeWars.kyu;
 
 public class WhoLikesIt {
     public static String whoLikesIt(String... names){

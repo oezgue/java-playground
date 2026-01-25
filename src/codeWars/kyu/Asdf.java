@@ -1,4 +1,4 @@
-package codeWars;
+package codeWars.kyu;
 // Parent Class
 public class Asdf {
     int someInt;

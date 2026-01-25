@@ -1,4 +1,4 @@
-package codeWars;
+package codeWars.kyu;
 
 public class SquareMatrixMultiplication {
     public static int[][] matrixMultiplication(int[][] a, int[][] b) {
